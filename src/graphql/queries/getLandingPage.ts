@@ -1,8 +1,12 @@
 const GET_LANDING_PAGE = /* GraphQL */ `
+  fragment imageData on UploadFile {
+    alternativeText
+    url
+  }
+
   fragment logo on LandingPage {
     logo {
-      alternativeText
-      url
+      ...imageData
     }
   }
 
@@ -15,8 +19,17 @@ const GET_LANDING_PAGE = /* GraphQL */ `
         url
       }
       image {
-        alternativeText
-        url
+        ...imageData
+      }
+    }
+  }
+
+  fragment sectionAbout on LandingPage {
+    sectionAbout {
+      title
+      description
+      image {
+        ...imageData
       }
     }
   }
@@ -25,6 +38,7 @@ const GET_LANDING_PAGE = /* GraphQL */ `
     landingPage {
       ...logo
       ...header
+      ...sectionAbout
     }
   }
 `
