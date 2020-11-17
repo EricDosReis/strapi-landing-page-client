@@ -1,3 +1,13 @@
+export type ButtonProps = {
+  label: string
+  url: string
+}
+
+export type ImageProps = {
+  alternativeText: string
+  url: string
+}
+
 export type LogoProps = {
   alternativeText: string
   url: string
@@ -24,14 +34,11 @@ export type BenefitProps = {
   title: string
 }
 
-export type ButtonProps = {
-  label: string
-  url: string
-}
-
-export type ImageProps = {
-  alternativeText: string
-  url: string
+export type AuthorProps = {
+  name: string
+  role: string
+  description: string
+  photo: ImageProps
 }
 
 export type HeaderProps = {
@@ -75,6 +82,11 @@ export type PricingBoxProps = {
   button: ButtonProps
 }
 
+export type SectionAboutUsProps = {
+  title: string
+  authors: AuthorProps[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -84,4 +96,5 @@ export type LandingPageProps = {
   sectionModules: SectionModulesProps
   sectionSchedule: SectionScheduleProps
   pricingBox: PricingBoxProps
+  sectionAboutUs: SectionAboutUsProps
 }
