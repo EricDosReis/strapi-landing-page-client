@@ -10,6 +10,10 @@ export type TechIconProps = {
   }
 }
 
+export type ConceptProps = {
+  title: string
+}
+
 export type ButtonProps = {
   label: string
   url: string
@@ -38,9 +42,15 @@ export type SectionTechsProps = {
   techIcons: TechIconProps[]
 }
 
+export type SectionConceptsProps = {
+  title: string
+  concepts: ConceptProps[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
   sectionAbout: SectionAboutProps
   sectionTechs: SectionTechsProps
+  sectionConcepts: SectionConceptsProps
 }
