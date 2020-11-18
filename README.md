@@ -1,7 +1,7 @@
 # Strapi Landing Page - Client
 
 A project to improve my knowledge about TypeScript and GraphQL on Front-end layer.
-[Strapi CMS API project](https://github.com/EricDosReis/strapi-landing-page-api)
+[Strapi CMS API project](https://github.com/EricDosReis/strapi-landing-page-api).
 
 **Prerequisites**: NodeJS
 
